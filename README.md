@@ -14,13 +14,24 @@ debug against instead of a search engine.
 
 ## How to read this
 
-- **New to backend:** go in order. Each chapter assumes the ones before it and
-  explains the vocabulary it introduces.
-- **Experienced:** use the chapters as a reference for the parts usually
-  hand-waved — framing, idempotency, cache validation, concurrency, and what a
-  guarantee actually guarantees.
-- **Every chapter** has the same shape: a short `README.md` for orientation and
-  the full notes in a single long file.
+Every concept lives in its own file with the same six parts: a one-line summary,
+`The mental model`, `In practice`, `Going deeper`, `Traps`, and `Sources`. Depth
+increases down the page, so the boundary between beginner and expert material is
+a heading rather than a judgement call.
+
+- **New to backend:** read in order, and stop each file after `In practice`.
+  That is a complete account of the concept; `Going deeper` is extras, not the
+  other half of the explanation.
+- **Experienced:** read the chapter's `Traps worth remembering` list, then
+  `Traps` and `Going deeper` in the files that matter. Skip the basics.
+- **Looking up a term:** [GLOSSARY.md](./GLOSSARY.md) — including the words that
+  mean different things in different contexts.
+- **Writing or editing a note:** the rules are in
+  [docs/style.md](./docs/style.md), and [docs/template.md](./docs/template.md) is
+  the skeleton to copy.
+
+A chapter directory holds a `README.md` (its map) plus one `NN-slug.md` file per
+concept. `node scripts/check.mjs` verifies links and structure.
 
 ## Chapters
 
