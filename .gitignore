@@ -1,0 +1,13 @@
+# Local taste profile — preferences learned from your own sessions. Stays on disk.
+.commandcode/taste/
+
+# Machine-local agent settings; shareable settings belong in settings.json.
+.commandcode/settings.local.json
+
+# Dependencies for any tooling added under scripts/
+node_modules/
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.swp
