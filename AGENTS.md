@@ -69,6 +69,9 @@ stays under ~72 characters.
   `.commandcode/commands/<name>.md` (Command Code) and `.opencode/commands/<name>.md`
   (OpenCode). Keep command bodies to a few lines that point at `docs/style.md` or
   `AGENTS.md`; never copy editorial rules into a command, or the copies drift.
-- **Do not create a `.commandcode/commands/<name>.md` with the same name as a skill.** In
-  Command Code, custom commands outrank skills, so the command shadows the skill and the skill
-  becomes reachable only as `/skill:<name>`.
+- **A `.commandcode/commands/<name>.md` with the same name as a skill shadows it.** Custom
+  commands outrank skills in Command Code, so `/<name>` runs the command and the skill is
+  reachable only as `/skill:<name>`. That is deliberate for `refine-it` — OpenCode needs a
+  command file anyway, so both agents get the same entry point — which is why that command
+  body delegates to the skill instead of restating the standard. The shadowed skill stays in
+  the model catalogue and can still be auto-invoked; only the plain slash name moves.
