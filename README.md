@@ -19,6 +19,9 @@ Every concept lives in its own file with the same six parts: a one-line summary,
 increases down the page, so the boundary between beginner and expert material is
 a heading rather than a judgement call.
 
+- **First time here:** run `/overview` in OpenCode or Command Code for a guided tour of the
+  repo — layout, reading paths, and which files are machinery rather than material. Add a
+  topic (`/overview idempotency`) to be told where it lives.
 - **New to backend:** read in order, and stop each file after `In practice`.
   That is a complete account of the concept; `Going deeper` is extras, not the
   other half of the explanation.
